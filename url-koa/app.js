@@ -34,8 +34,8 @@ router.get("/", async (ctx, next)=>{
 });
 // post请求
 router.post("/signin", async (ctx, next)=>{
-    var name = ctx.request.body.name,
-        passwd = ctx.request.body.password;
+    var name = ctx.request.body.name || '',
+        passwd = ctx.request.body.password || '';
     if (name === "koa" && passwd === "123456"){
         ctx.response.body = `<h1>Hello,${name}</h1>`;
     } else {
