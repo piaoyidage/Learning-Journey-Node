@@ -4,6 +4,7 @@
 
 👉 [Node 初认识](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-00)
 
-👉 [Hello World](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-01)
+👉 [官方版本 hello world](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-01)
 
+👉 [express 版本 hello world](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-02)
 
