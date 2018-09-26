@@ -4,7 +4,9 @@
 
 👉 [Node 初认识](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-00)
 
-👉 [官方版本 hello world](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-01)
+👉 [hello world](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-01)
 
-👉 [express 版本 hello world](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-02)
+👉 [express 初认识](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-02)
+
+👉 [使用 utility 对请求参数加密](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-03)
 
