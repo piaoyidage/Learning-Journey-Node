@@ -2,7 +2,7 @@
 * @Author: maoying.hu
 * @Date:   2018-09-26 16:44:15
 * @Last Modified by:   maoying.hu
-* @Last Modified time: 2018-09-26 17:20:28
+* @Last Modified time: 2018-09-26 19:40:25
 */
 
 const express = require('express')
@@ -18,17 +18,15 @@ app.get('/', function(req, res, next) {
             // console.log(result.text)
             const $ = cheerio.load(result.text)
             const elements = []
-            $('#content .pl2 > a').each(function(index, element) {
+            $('#content .pl2 > a').each((index, element) => {
                 const $element = $(element)
                 elements.push({
                     title: $element.attr('title'),
                     href: $element.attr('href'),
                 })
             })
-            return elements
-            // res.send(elements)
+            res.send(elements)
         })
-        .then(result => res.send(result))
         .catch(err => console.log(err))
 })
 
