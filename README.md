@@ -13,3 +13,6 @@
 👉 [使用 superagent 和 cheerio 爬取豆瓣图书 top50](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-04)
 
 👉 [使用 eventproxy 处理并发](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-05)
+
+👉 [Node 初级入门到高级入门实战](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-06)
+
