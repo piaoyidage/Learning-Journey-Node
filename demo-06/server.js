@@ -8,10 +8,10 @@ const start = (route, handle) => {
         const { pathname } = url.parse(request.url)
         // console.log('pathname:', pathname)
         // 根据url映射到不同的处理逻辑
-        route(handle, pathname)
+        const content = route(handle, pathname)
 
         response.writeHead(200, { 'Content-Type': 'text/plain' })
-        response.write('Hello World')
+        response.write(content)
         response.end()
     }).listen(8888)
 
