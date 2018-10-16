@@ -8,11 +8,7 @@ const start = (route, handle) => {
         const { pathname } = url.parse(request.url)
         // console.log('pathname:', pathname)
         // 根据url映射到不同的处理逻辑
-        const content = route(handle, pathname)
-
-        response.writeHead(200, { 'Content-Type': 'text/plain' })
-        response.write(content)
-        response.end()
+        route(handle, pathname, response)
     }).listen(8888)
 
     console.log('Server has started.')
