@@ -6,9 +6,20 @@ const start = (route, handle) => {
         console.log('request received.')
         // 解析请求的地址
         const { pathname } = url.parse(request.url)
-        // console.log('pathname:', pathname)
-        // 根据url映射到不同的处理逻辑
-        route(handle, pathname, response)
+
+        let postData = ''
+
+        request.setEncoding('utf8')
+
+        request.addListener('data', postDataChunk => {
+            postData += postDataChunk
+            console.log('postDataChunk:', postDataChunk, ', postData:', postData)
+        })
+
+        request.addListener('end', () => {
+            route(handle, pathname, response, postData)
+        })
+
     }).listen(8888)
 
     console.log('Server has started.')
