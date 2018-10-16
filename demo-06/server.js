@@ -7,18 +7,7 @@ const start = (route, handle) => {
         // 解析请求的地址
         const { pathname } = url.parse(request.url)
 
-        let postData = ''
-
-        request.setEncoding('utf8')
-
-        request.addListener('data', postDataChunk => {
-            postData += postDataChunk
-            console.log('postDataChunk:', postDataChunk, ', postData:', postData)
-        })
-
-        request.addListener('end', () => {
-            route(handle, pathname, response, postData)
-        })
+        route(handle, pathname, response, request)
 
     }).listen(8888)
 
