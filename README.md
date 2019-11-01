@@ -16,3 +16,5 @@
 
 👉 [Node 初级入门到高级入门实战](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-06)
 
+👉 [7 天学会 NodeJS](https://github.com/piaoyidage/Learning-Journey-Node/tree/master/demo-07)
+
